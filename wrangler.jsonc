@@ -6,20 +6,5 @@
 
   "observability": {
     "enabled": true
-  },
-
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "edge-desk-db",
-      "database_id": "DA_INSERIRE"
-    }
-  ],
-
-  "kv_namespaces": [
-    {
-      "binding": "CACHE",
-      "id": "DA_INSERIRE"
-    }
-  ]
+  }
 }
