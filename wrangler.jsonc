@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "edge-desk-pro",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-07-27",
+
+  "observability": {
+    "enabled": true
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "edge-desk-db",
+      "database_id": "DA_INSERIRE"
+    }
+  ],
+
+  "kv_namespaces": [
+    {
+      "binding": "CACHE",
+      "id": "DA_INSERIRE"
+    }
+  ]
+}
