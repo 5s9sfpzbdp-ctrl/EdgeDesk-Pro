@@ -32,9 +32,20 @@ export default {
 
     }
 
-    return new Response("Not Found", {
-      status: 404
-    });
-
+    return new Response(`
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EdgeDesk Pro</title>
+</head>
+<body style="font-family:Arial;padding:40px">
+<h1>🚀 EdgeDesk Pro</h1>
+<p>Worker online!</p>
+</body>
+</html>
+`, {
+  headers: {
+    "Content-Type": "text/html;charset=UTF-8"
   }
-}
+});
